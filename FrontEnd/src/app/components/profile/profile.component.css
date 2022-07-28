@@ -1,0 +1,36 @@
+div#first-card {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.info-text {
+    padding: 0 1rem;
+}
+
+button.btn-primary {
+    font-weight: bold;
+}
+.info-btns {
+    padding: 1rem;
+    margin: 0.1rem;
+}
+
+img.card-img-top {
+    width: 100%;
+    border-radius: 2rem 2rem 0 0;
+    margin: 0;
+    padding: 0;
+}
+
+#profile-img {
+    border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
+    z-index: 1;
+    margin: -5rem 0 0 1rem;
+    border: 3px solid #fff;
+}
+
+.card-title {
+    margin-top: 1rem;
+}

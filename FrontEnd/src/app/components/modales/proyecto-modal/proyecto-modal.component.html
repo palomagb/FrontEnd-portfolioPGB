@@ -1,0 +1,24 @@
+<form [formGroup]="formulario" (ngSubmit)="guardarProyecto()">
+    <div class="input-group flex-nowrap mt-2">
+        <span class="input-group-text">Titulo: </span>
+        <input type="text" class="form-control" placeholder= "Titulo del proyecto" formControlName="titulo">
+    </div>
+
+    <div class="input-group flex-nowrap mt-2">
+        <span class="input-group-text">Descripcion: </span>
+        <input type="text" class="form-control" placeholder="Descripcion" formControlName="descripcion" >
+    </div>
+
+    <div class="input-group flex-nowrap mt-2">
+        <label class="input-group-text texto-titulo">Link: </label>
+        <input type="text" class="form-control" placeholder="Pagina web" formControlName="url">
+    </div>
+
+    <div>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+    </div>
+
+    <div>
+        <button class="btn btn-primary" (click)="cerrarModal()">Cerrar</button>
+    </div>
+</form>

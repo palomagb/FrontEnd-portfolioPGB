@@ -1,0 +1,30 @@
+<div class="container" >
+    <form [formGroup]="formulario" class="m-5" (ngSubmit)="iniciarSesion()">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Username</label>
+            <input type="email" formControlName="username"
+            [ngClass]="{'is-invalid': username?.errors && username?.touched, 'is-valid': username?.valid && username?.touched}"
+            class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div *ngIf="username?.errors && username?.touched">
+                <p *ngIf="username?.hasError('required')" class="text-danger">
+                    El usuario es requerido
+                </p>              
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" formControlName="password"
+            [ngClass]="{'is-invalid': password?.errors && password?.touched, 'is-valid': password?.valid && password?.touched}"
+            class="form-control" id="exampleInputPassword1">            
+            <div *ngIf="password?.errors && password?.touched">
+                <p *ngIf="password?.hasError('required')" class="text-danger">
+                    La contraseña es requerida
+                </p>              
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary me-2">Enviar</button>
+        <button type="submit" class="btn btn-primary" (click)="volverAlHome()">Volver</button>
+
+    </form>
+</div>

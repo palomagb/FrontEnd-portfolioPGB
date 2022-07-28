@@ -1,0 +1,13 @@
+<form [formGroup]="formulario" (ngSubmit)="actualizarAbout()">
+    
+    <div class="input-group flex-nowrap mt-2">
+        <span class="input-group-text">Acerca de mi: </span>
+        <input type="text" class="form-control" placeholder="acerca de mi" formControlName="acerca" >
+    </div>
+
+    <div class="d-flex">
+        <button class="btn btn-primary me-3" >Guardar</button>
+        <button class="btn btn-primary" (click)="cerrarModal()">Cerrar</button>
+    </div>    
+    
+

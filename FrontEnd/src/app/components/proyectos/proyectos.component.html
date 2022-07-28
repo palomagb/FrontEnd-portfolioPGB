@@ -1,0 +1,39 @@
+
+<!--<div class="proyecto m-3">
+    <h2>Proyectos</h2>
+    <ul id="proyecto">
+      <li *ngFor="let Pro of Proyectos">
+        <div class="card" style="width: 18rem">
+        <img [src]="Pro.fotourl" class="card-img-top" alt="..." /> 
+          <div class="card-body">
+            <h5 class="card-title">{{Pro.proyecto}}</h5>
+            <p class="card-text">
+              {{Pro.descrip}}
+            </p>
+            <p><a href="https://github.com/" target="_blank">Link a Proyecto</a></p>
+          </div>
+          </div>            
+      </li>
+    </ul>
+  </div>
+  <br>-->
+  <h2>Proyectos</h2>
+  <app-addbutton *ngIf="login" (click)="abrirModalAgregar()"></app-addbutton>
+  <br>
+  <br>
+  <div class="card mb-3" style="max-width: 540px;" *ngFor="let Pro of proyecto">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img [src]="Pro.url" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+          <h5 class="card-title">{{Pro.titulo}}</h5><app-deletebutton (click)="borrarProyecto (Pro.idproyecto)" *ngIf="login"></app-deletebutton ><app-editbutton *ngIf="login" (click)="abrirModal(Pro.idproyecto)"></app-editbutton>
+        </div>
+          <p class="card-text">{{Pro.descripcion}}</p>
+          <a href="https://github.com/" class="btn btn-primary" target="_blank">Click here</a>
+        </div>
+      </div>
+    </div>
+  </div>

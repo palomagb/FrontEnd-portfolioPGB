@@ -1,0 +1,25 @@
+<form [formGroup]="formulario" (ngSubmit)="guardarSkill()">
+<table class="table table-striped">
+    <thead>
+        <tr>        
+          <th scope="col" class="text-center">Habilidad</th>
+          <th scope="col" class="text-center">Porcentaje</th>          
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" class="text-center">
+            <input type="text" class="form-control" placeholder= "Habilidad" formControlName="titulo" >
+          </th>
+          <td scope="col" class="text-center">
+            <input type="text" class="form-control" placeholder= "porcentaje" formControlName="dominio" >
+          </td>
+        </tr>      
+      </tbody>
+    
+</table>
+<div class="d-flex">
+    <button type="submit" class="btn btn-primary me-3" (click)="guardarSkill()">Guardar</button>
+    <button class="btn btn-primary" (click)="cerrarModal()">Cerrar</button>
+</div>
+</form>

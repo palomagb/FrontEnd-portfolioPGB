@@ -1,0 +1,29 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: right;
+    flex-flow:row nowrap;
+    height: 80px;
+    align-items: center;
+    margin: 10px;
+    z-index: 1;
+}
+
+nav > #social{
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    margin-right: 1rem;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+nav > #social > li{
+    margin-right: 1rem;
+}
+
+nav > #social > li:last-child{
+    margin-right: 0rem;
+}

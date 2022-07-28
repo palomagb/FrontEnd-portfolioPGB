@@ -1,0 +1,36 @@
+<form [formGroup]="formulario" (ngSubmit)="guardarExperiencia()">
+    <div class="input-group flex-nowrap mt-2">
+        <span class="input-group-text">Puesto: </span>
+        <input type="text" class="form-control" placeholder= "puesto" formControlName="puesto">
+    </div>
+
+    <div class="input-group flex-nowrap mt-2">
+        <span class="input-group-text">Descripcion: </span>
+        <input type="text" class="form-control" placeholder="Descripcion" formControlName="descripcion" >
+    </div>
+    <div class="input-group flex-nowrap mt-2">
+        <span class="input-group-text">Empresa: </span>
+        <input type="text" class="form-control" placeholder="Nombre de la empresa" formControlName="empresa">
+    </div>
+    <div class="input-group flex-nowrap mt-2">
+        <label class="input-group-text texto-titulo">Fecha de inicio: </label>
+        <input type="date" class="form-control" placeholder="Fecha de inicio" formControlName="inicio">
+    </div>
+    <div class="input-group flex-nowrap mt-2">
+        <label class="input-group-text texto-titulo">Fecha de fin: </label>
+        <input type="date" class="form-control" placeholder="Fecha de fin" formControlName="fin">
+    </div>
+
+    <div class="input-group flex-nowrap mt-2">
+        <span class="input-group-text">Logo empresa: </span>
+        <input type="text" class="form-control" placeholder="Logo empresa" formControlName="fotourl">
+    </div>
+    <div>
+        <button class="btn btn-primary">Guardar</button>
+    </div>
+    <div>
+        <button class="btn btn-primary" (click)="cerrarModal()">Cerrar</button>
+    </div>
+</form>
+
+

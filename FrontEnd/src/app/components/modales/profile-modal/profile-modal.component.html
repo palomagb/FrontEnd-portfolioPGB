@@ -1,0 +1,34 @@
+<form [formGroup]="formulario " (ngSubmit)="actualizarProfile()">
+    <div class="input-group flex-nowrap mt-2">
+        <span class="input-group-text">Titulo Adquirido </span>
+        <input type="text" class="form-control" placeholder= "Titulo Adquirido" formControlName="titulo">
+    </div>
+    <div class="input-group flex-nowrap mt-2">
+        <span class="input-group-text">Nombre: </span>
+        <input type="text" class="form-control" placeholder= "Nombre" formControlName="nombre">
+    </div>
+
+    <div class="input-group flex-nowrap mt-2">
+        <span class="input-group-text">Apellido: </span>
+        <input type="text" class="form-control" placeholder="Apellido" formControlName="apellido" >
+    </div>
+
+    <div class="input-group flex-nowrap mt-2">
+        <label class="input-group-text texto-titulo">E-mail: </label>
+        <input type="text" class="form-control" placeholder="E-mail" formControlName="email">
+    </div>
+
+    <div class="input-group flex-nowrap mt-2">
+        <span class="input-group-text">Telefono: </span>
+        <input type="text" class="form-control" placeholder="Telefono" formControlName="telefono">
+    </div>
+
+    <div class="input-group flex-nowrap mt-2">
+        <span class="input-group-text">Foto Perfil : </span>
+        <input type="text" class="form-control" placeholder="Foto Perfil" formControlName="fotourl">
+    </div>
+
+<div>
+    <button class="btn btn-primary me-3">Guardar</button>
+    <button class="btn btn-primary" (click)="cerrarModal()">Cerrar</button>
+</div>
