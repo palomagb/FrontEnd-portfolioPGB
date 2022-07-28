@@ -31,6 +31,7 @@ import { ProfileModalComponent } from './components/modales/profile-modal/profil
 import { ReactiveFormsModule } from '@angular/forms';
 import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component';
 import { InterceptorService } from './services/api-rest/interceptor.service';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -66,7 +67,8 @@ import { InterceptorService } from './services/api-rest/interceptor.service';
     AppRoutingModule,
     NgCircleProgressModule.forRoot({"responsive": true}),
     NgxScrollTopModule,
-    ReactiveFormsModule //se importa para usar en los formularios reactivos
+    ReactiveFormsModule,
+    NgbModule //se importa para usar en los formularios reactivos
   ],
 
   
