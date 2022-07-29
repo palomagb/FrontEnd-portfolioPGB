@@ -4,20 +4,19 @@ header#mainHeader {
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-content: center;
-    background: rgba(0, 0, 0, 0.55);
-    flex-flow:row nowrap;
-    /*width: 400px;  */
-    border-radius:32px;
-    height: 80px;
+    background: #FBA7A8;
+    flex-flow:row nowrap; 
+    border-radius:10px;
+    height: 90px;
     align-items: center;
     
-    /*border-bottom: 1px solid rgba(255,255,255,.1);*/
-    margin: 10px;
+    /* border-bottom: 1px solid rgba(255,255,255,.1); */
+    margin: 7px;
     position:sticky;
     top:0;
     z-index: 1;
-    /*
-    background-color: rgba(255,255,255,0.2);
+    
+   /* background-color: rgba(255,255,255,0.2);
     position: sticky;
     top: 0;
     display: flex;
@@ -26,14 +25,14 @@ header#mainHeader {
     padding: 0 1rem;
     height: 6rem;
     box-shadow: 0 0 1rem 0 rgba(0,0,0,0.5);
-    backdrop-filter: blur(0.5rem);*/
+    backdrop-filter: blur(0.5rem); */
 }
 
 .inHeader > img{
-    height: 2rem; /* 4 * 16px */
+    height: 6rem; /* 4 * 16px */
 }
 a{
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 1rem;
 }
 .inNav{

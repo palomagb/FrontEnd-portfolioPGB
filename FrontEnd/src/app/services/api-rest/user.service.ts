@@ -8,7 +8,8 @@ import { User } from '../interface/user';
 })
 export class UserService {
 
-  url: string = "https://comunidad-apirest.herokuapp.com/api";
+  url: string = "https://portfolio-palomagareisborgiani.herokuapp.com/api";
+  
   
 
   user: User = { username: "", password: "", token: "" };
@@ -20,7 +21,7 @@ export class UserService {
   login(username: string, password: string): Observable<any> {  
     this.user.username = username;
     this.user.password = password;
-    return this.http.post(`https://portfolioapirest.herokuapp.com/api/login`, this.user);
+    return this.http.post(`https://portfolio-palomagareisborgiani.herokuapp.com/api/login`, this.user);
     
 	}
 

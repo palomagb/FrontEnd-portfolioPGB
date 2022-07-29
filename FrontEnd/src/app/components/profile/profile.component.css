@@ -23,12 +23,12 @@ img.card-img-top {
 }
 
 #profile-img {
-    border-radius: 50%;
-    width: 8rem;
-    height: 8rem;
+    border-radius: 40%;
+    width: 15rem;
+    height: 15rem;
     z-index: 1;
-    margin: -5rem 0 0 1rem;
-    border: 3px solid #fff;
+    margin: -5rem 0 0 -2rem;
+    border: 3px solid rgb(255, 255, 255);
 }
 
 .card-title {

@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class ProyectosService {
 
-  url: string = "https://comunidad-apirest.herokuapp.com/api";
+  url: string = "https://portfolio-palomagareisborgiani.herokuapp.com/api";
   
   
   

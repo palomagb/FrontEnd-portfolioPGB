@@ -8,7 +8,7 @@ import { Persona } from '../interface/Persona';
 })
 export class PersonaService {
 
-  url: string = "https://comunidad-apirest.herokuapp.com/api";
+  url: string = "https://portfolio-palomagareisborgiani.herokuapp.com/api";
   
  
   
