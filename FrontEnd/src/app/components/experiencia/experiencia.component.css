@@ -1,36 +1,7 @@
-/* Una forma */
-/*.experiencia { 
-    background: #afa;
-    padding: 6px;
-}
-#experiencia {
-    display: flex;
-    padding: 0;
-    list-style: none;
-    margin: 0;
-}
-#experiencia > li {
-    margin-right: 1rem;
-}
-.img{
-    width: max-content;
-    align-items: center;
-    margin: auto;
-    display: flex;
-}
-.card-img, .card-img-bottom, .card-img-top {
-    width: max-content;
-    align-items: center;
-    margin: auto;
-    border: solid;
-} */
-/* La otra forma */
-
-
 .experiencia { 
-    text-align: center;
-    background: sandybrown;
-    padding: 1px;
+    background: #fdeaea;
+    padding: 15px;
+    border-radius: 20px;
 }
 #experiencia {
     padding: 0;
@@ -39,4 +10,15 @@
 .card-horizontal {
     display: flex;
     flex: 1 1 auto;
+}
+h1{
+    text-align: center;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+img{
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+   
 }

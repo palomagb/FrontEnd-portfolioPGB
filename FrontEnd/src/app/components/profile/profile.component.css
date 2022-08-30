@@ -1,6 +1,13 @@
-div#first-card {
+div#profile-info {
     padding: 1rem;
     margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
 }
 
 .info-text {
@@ -9,6 +16,12 @@ div#first-card {
 
 button.btn-primary {
     font-weight: bold;
+    background-color: #fff;
+    border-color: rgb(7, 27, 40);
+}
+
+button:hover {
+    background-color: pink;
 }
 .info-btns {
     padding: 1rem;
@@ -23,14 +36,23 @@ img.card-img-top {
 }
 
 #profile-img {
-    border-radius: 40%;
-    width: 15rem;
-    height: 15rem;
+    border-radius: 70%;
     z-index: 1;
-    margin: -5rem 0 0 -2rem;
-    border: 3px solid rgb(255, 255, 255);
+    margin: -10rem 0 0 -5rem;
+    border: 3px solid pink(255, 255, 255);
+    max-width: 12.5rem;
+
 }
+
 
 .card-title {
     margin-top: 1rem;
+}
+
+.banner-edit {
+    display: flex;
+    float: right;
+    z-index: 1;
+    border-radius: 0.5rem;
+
 }

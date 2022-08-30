@@ -26,13 +26,7 @@ export class ProyectoModalComponent implements OnInit {
       url: [''],
       persona: [''],
     })
-   /*  esto lo saque de la interface proyecto 
-    ideproyecto?: number;
-    titulo: String;
-    descripcion: string;
-    url: String; 
-    persona: number;
-    */
+  
   }
 
  

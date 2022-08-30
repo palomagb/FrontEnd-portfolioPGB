@@ -79,6 +79,8 @@ login:any;
       },
       
     ];
+
+
     abrirModal(id:any){
       //utiliza el metodo open de NgbModal para abrir el modal. El parametro es el componente que se va a mostrar en el modal. "centred" se usa para centrar el modal.
       const modalRef = this.modalService.open(ProyectoModalComponent, { centered: true }   );   //{ centered: true }     

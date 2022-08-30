@@ -52,28 +52,7 @@ export class ExperienciaComponent implements OnInit {
     this.getAll()
     console.log(this.login)
    }
-  Experiencia: any[] = [
-    {
-      idlaboral: 1,
-      puesto: 'Informatico',
-      descripcion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation',
-      empresa: 'Argentina',
-      inicio: '10/10/10',
-      fin: '10/10/10',
-      fotourl: "https://via.placeholder.com/150",
-      persona: 1,
-    },
-    {
-      idlaboral: 1,
-      puesto: 'Informatico2',
-      descripcion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation',
-      empresa: 'Argentina',
-      inicio: '09/09/09',
-      fin: '09/09/09',
-      fotourl: "https://via.placeholder.com/150",
-      persona: 1,
-    },
-  ];
+ 
 
   abrirModal(id:any){
     //utiliza el metodo open de NgbModal para abrir el modal. El parametro es el componente que se va a mostrar en el modal. "centred" se usa para centrar el modal.

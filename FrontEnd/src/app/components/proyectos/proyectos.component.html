@@ -1,3 +1,31 @@
+<div class="proyecto m-3">
+  <h1>PROYECTOS</h1>
+  <app-addbutton *ngIf="login" (click)="abrirModalAgregar()"></app-addbutton>
+  <br>
+  <br>
+  <div class="card mb-4" style="max-width: fluid;" *ngFor="let Pro of proyecto">
+    <div class="row g-0">
+      <div class="d-flex ">
+        <div class="col-md-4">
+
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <h5 class="card-title">{{Pro.titulo}}</h5>
+              <div class="d-flex justify-content-between">
+                <app-editbutton *ngIf="login" (click)="abrirModal(Pro.idproyecto)"></app-editbutton>
+                <app-deletebutton (click)="borrarProyecto (Pro.idproyecto)" class="me-2" *ngIf="login">
+                </app-deletebutton>
+              </div>
+            </div>
+            <p class="card-text">{{Pro.descripcion}}</p>
+            <a href="https://github.com/palomagb" class="btn btn-primary" target="_blank">Ir al proyecto</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 <!--<div class="proyecto m-3">
     <h2>Proyectos</h2>
@@ -16,7 +44,7 @@
       </li>
     </ul>
   </div>
-  <br>-->
+  <br>
   <h2>Proyectos</h2>
   <app-addbutton *ngIf="login" (click)="abrirModalAgregar()"></app-addbutton>
   <br>
@@ -32,8 +60,10 @@
           <h5 class="card-title">{{Pro.titulo}}</h5><app-deletebutton (click)="borrarProyecto (Pro.idproyecto)" *ngIf="login"></app-deletebutton ><app-editbutton *ngIf="login" (click)="abrirModal(Pro.idproyecto)"></app-editbutton>
         </div>
           <p class="card-text">{{Pro.descripcion}}</p>
-          <a href="https://github.com/" class="btn btn-primary" target="_blank">Click here</a>
+          <a href="https://github.com/palomagb" class="btn btn-primary" target="_blank">Click here</a>
         </div>
       </div>
     </div>
   </div>
+
+  --->

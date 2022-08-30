@@ -57,24 +57,24 @@ export class SkillsComponent implements OnInit {
 
 
   skills: any[] = [
- /*   {   porcentaje: 12,
+  {   porcentaje: 70,
         area: "Git"
   },
-    {   porcentaje: 92,
+    {   porcentaje: 90,
       area: "LIDERAZGO"
   },
-  {   porcentaje: 52,
+  {   porcentaje: 100,
     area: "COMUNICACIÓN"
 },
-{   porcentaje: 42,
+{   porcentaje: 60,
   area: "MYSQL"
 },
-{   porcentaje: 10,
+{   porcentaje: 50,
   area: "JAVA"
 },
-{   porcentaje: 32,
+{   porcentaje: 40,
   area: "ANGULAR"
-}*/]; 
+}]; 
 
 abrirModal(id:number){
   //utiliza el metodo open de NgbModal para abrir el modal. El parametro es el componente que se va a mostrar en el modal. "centred" se usa para centrar el modal.

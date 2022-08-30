@@ -25,15 +25,7 @@ export class EducacionModalComponent implements OnInit {
       fotourl: [''],
       persona: ['']
     })
-    /*  esto lo saque de la interface Educacion 
-    ideducacion?: number;
-    titulo: String;
-    fechafin: Date;
-    institucion: String; 
-    institucionurl: String; 
-    fotourl: String;
-    persona: number;
-    */
+    
     
   }
   ngOnInit(): void {

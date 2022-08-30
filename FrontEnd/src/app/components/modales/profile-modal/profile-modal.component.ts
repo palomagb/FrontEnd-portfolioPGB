@@ -35,15 +35,6 @@ export class ProfileModalComponent implements OnInit {
       token: [''],
 
 
-      /*
-      idpersona: [''],
-      nombre: [''],
-      apellido: [''],
-      email: [''],
-      telefono: [''],
-      fotourl: [''],
-      persona: [''],
-      */
 })
 
 }
@@ -83,15 +74,7 @@ export class ProfileModalComponent implements OnInit {
         token: pers.token, 
       
       
-      /*
-       idpersona: pro.idpersona,
-       nombre: pro.nombre,
-       apellido: pro.apellido,
-       email: pro.email,
-       telefono: pro.telefono,
-       fotourl: pro.fotourl,
-       persona: pro.persona
-       */
+      
      });
    }
  

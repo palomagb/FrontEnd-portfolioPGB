@@ -27,16 +27,6 @@ export class ExperienciaModalComponent implements OnInit {
       fotourl: [''],
       persona: ['']
     })
-    /*  esto lo saque de la interface Educacion 
-    idlaboral?: number;
-    puesto: String;
-    descripcion: String;
-    empresa: String;
-    inicio: Date;
-    fin: Date;
-    fotourl: String;   
-    persona: number;
-    */
   
     
   }

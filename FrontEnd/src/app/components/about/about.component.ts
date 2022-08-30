@@ -36,14 +36,6 @@ export class AboutComponent implements OnInit {
     }
      
 
-  /*de aca tomada los datos    
-  About: any[] = [
-  {   acercade: "Acerca de",
-      texto: "Programador fullstack junior freelance."
-
-  } 
-]
-*/
 abrirModal(id:any){
   //utiliza el metodo open de NgbModal para abrir el modal. El parametro es el componente que se va a mostrar en el modal. "centred" se usa para centrar el modal.
   console.log(id)

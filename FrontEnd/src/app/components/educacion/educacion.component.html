@@ -4,7 +4,7 @@
   <app-addbutton *ngIf="login" (click)="crearEducacionModal()" ></app-addbutton>
   <br>
   <br>
-  <div class="card mb-3" style="max-width: 540px;" *ngFor="let Edu of educacion">
+  <div class="card mb-4" style="max-width: fluid;" *ngFor="let Edu of educacion">
     <p class="card-text">{{Edu.titulo}}</p>
     
     <div class="d-flex">
